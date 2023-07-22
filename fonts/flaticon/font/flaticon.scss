@@ -1,0 +1,49 @@
+$flaticon_mycollection-font: "flaticon_mycollection";
+
+@font-face {
+    font-family: $flaticon_mycollection-font;
+    src: url("./flaticon_mycollection.ttf?c1f4932e9de4a9dbd70f6537e1b8edbc") format("truetype"),
+url("./flaticon_mycollection.woff?c1f4932e9de4a9dbd70f6537e1b8edbc") format("woff"),
+url("./flaticon_mycollection.woff2?c1f4932e9de4a9dbd70f6537e1b8edbc") format("woff2"),
+url("./flaticon_mycollection.eot?c1f4932e9de4a9dbd70f6537e1b8edbc#iefix") format("embedded-opentype"),
+url("./flaticon_mycollection.svg?c1f4932e9de4a9dbd70f6537e1b8edbc#flaticon_mycollection") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_mycollection !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_mycollection-map: (
+    "certificate": "\f101",
+    "warranty": "\f102",
+    "box": "\f103",
+    "terms-and-conditions": "\f104",
+    "analysis": "\f105",
+    "quality-control": "\f106",
+);
+
+.flaticon-certificate:before {
+    content: map-get($flaticon_mycollection-map, "certificate");
+}
+.flaticon-warranty:before {
+    content: map-get($flaticon_mycollection-map, "warranty");
+}
+.flaticon-box:before {
+    content: map-get($flaticon_mycollection-map, "box");
+}
+.flaticon-terms-and-conditions:before {
+    content: map-get($flaticon_mycollection-map, "terms-and-conditions");
+}
+.flaticon-analysis:before {
+    content: map-get($flaticon_mycollection-map, "analysis");
+}
+.flaticon-quality-control:before {
+    content: map-get($flaticon_mycollection-map, "quality-control");
+}
